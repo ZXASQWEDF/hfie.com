@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <style>
+        body {
+            background-color: #93B874;
+        }
+        
+        h1 {
+            background-color: cadetblue;
+        }
+        
+        .tit2 {
+            background-color: #F3F3F3;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            height: auto;
+            width: auto;
+            display: block;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        
+        .button span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        
+        .button:hover span {
+            padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function() { //屏蔽鼠标右键
+            $(document).bind("contextmenu", function(e) {
+                return false;
+            });
+        });
+        $(function() {
+            document.addEventListener('keydown', function(e) {
+                e = window.event || e;
+                var keycode = e.keyCode || e.which;
+                if (e.ctrlKey && keycode == 83) { //屏蔽Ctrl+s 保存页面
+                    e.preventDefault();
+                    window.event.returnValue = false;
+                }
+                if (e.ctrlKey && keycode == 85) { //屏蔽Ctrl+u  查看页面的源代码
+                    e.preventDefault();
+                    window.event.returnValue = false;
+                }
+                if (keycode == 123) { //屏蔽F12
+                    e.preventDefault();
+                    window.event.returnValue = false;
+                }
+                if (e.ctrlKey && e.shiftKey && keycode == 73) { //屏蔽Ctrl+shift+i   屏蔽调出控制台 和F12一样
+                    e.preventDefault();
+                    window.event.returnValue = false;
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>
+            祕密網
+        </h1>
+    </center>
+    <center>
+        <button class="button" style="vertical-align:middle"><span><a href="/Volumes/NO NAME/未命名資料夾/1232.html">进入</a> </span></button>
+    </center>
+    <center>
+        <button class="button" style="vertical-align:middle"><span><a href="/Volumes/NO NAME/未命名資料夾/1232.html">公告</a> </span></button>
+    </center>
+</body>
+
+</html>
