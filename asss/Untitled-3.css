@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+#Time,
+#p #a {
+    font-size: 100px;
+    text-align: center;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* 头部样式 */
+
+.header {
+    background-color: #00FFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px;
+    background: #dddddd;
+    width: 300px;
+    border-radius: 25px;
+}
+
+center div {
+    background-color: sandybrown;
+}

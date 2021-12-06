@@ -19,4 +19,10 @@ function login() {
         }
     }, 2000)
 }
-loginButton.addEventListener('click', login)// JavaScript Document
+"use strict";
+x = 3.14; // 报错 (x 未定义)
+let xxx = window.confirm("以停服，請注意公告")
+if (xxx) {
+    window.alert("你好！");
+} else { window.location.href = "/Users/hkh/Desktop/未命名資料夾/<html>.html"; }
+loginButton.addEventListener('click', login) // JavaScript Document
